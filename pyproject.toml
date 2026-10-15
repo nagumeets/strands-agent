@@ -1,0 +1,21 @@
+[project]
+name = "demmo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "nagumeets", email = "nagumeets@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "cryptography==43.0.3",
+    "strands-agents>=1.57.1",
+    "strands-agents-tools>=0.8.9",
+]
+
+[project.scripts]
+demmo = "demmo:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
